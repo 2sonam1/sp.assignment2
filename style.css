@@ -1,0 +1,178 @@
+/* font */
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('font/mark_simonson__proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('font/mark_simonson__proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'proxima_novaregular';
+} 
+
+.container-fluid{
+    max-width: 1400px;
+}
+
+/* header */
+
+.nav-logo img{
+    width: 150px;
+}
+.nav-in{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.nav-link-in{
+    text-align: center;
+    width: 100%;
+}
+.nav-link-in span{
+    color: #C5C5C5;
+    font-size: 12px;
+}
+.nav-link-in ul{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    width: 100%;
+}
+.nav-link-in a{
+    text-decoration: none;
+    color: black;
+    padding: 4px 0 4px 0;
+    position: relative;
+}
+.nav-link-in a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom : -5px;
+    background-color: #FFEE00;
+    width: 0;
+    height: 2px;
+    transition: 0.5s ease all; 
+}
+.nav-link-in a:hover::after{
+    width: 100%; 
+}
+.nav-link-in a:hover{
+    color: #FFEE00;
+    font-weight: 800;
+}
+.nav-link-btn button{
+    position: relative;
+    background-color: #FFEE00;
+    border-style: solid;
+    border-color: #FFEE00;
+    padding: 5px 15px 5px 15px;
+    border-radius: 32.5px;
+}
+.nav-link-btn button:hover{
+    background-color: white;
+    border-style: solid;
+    border-color: #FFEE00;
+    color: #FFEE00;
+    font-weight: 900;
+    transition: 0.2s ease all;
+}
+
+/* banner */
+
+.banner{
+    height: 80vh;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+.ban-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.ban-content{
+}
+.ban-content-in{
+    width: 70vb;
+    margin: 0 40px 0 40px;
+}
+/* .nav-links-active{
+    padding: 30px 0 30px 15px;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+} */
+.drop button{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    border-style: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+.drop-open button{
+    visibility: hidden;
+    opacity: 0;
+}
+.drop-close button{
+    visibility: hidden;
+    opacity: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .nav-link-in ul{
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: start;
+  }
+  .nav-link-in li{
+    text-align: left;
+    position: relative;
+  }
+  .nav-link-in a{
+    position: static;
+  }
+  .nav-in{
+    flex-direction: column;
+    position: relative;
+  }
+  .drop-open button{
+    visibility: visible;
+    opacity: 1;
+  }
+  .drop-close button{
+    visibility: hidden;
+    opacity: 0;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* padding: 30px 0 30px 15px; */
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    height: 0;
+  }
+  
+}
