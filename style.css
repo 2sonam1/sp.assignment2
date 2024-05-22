@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     font-family:'proxima_novaregular';
+    scrollbar-width: none;
 } 
 
 .container-fluid{
@@ -67,10 +68,11 @@
     background-color: #FFEE00;
     width: 0;
     height: 2px;
-    transition: 0.5s ease all; 
+    
 }
 .nav-link-in a:hover::after{
     width: 100%; 
+    transition: 0.5s ease all; 
 }
 .nav-link-in a:hover{
     color: #FFEE00;
@@ -92,14 +94,24 @@
     font-weight: 900;
     transition: 0.2s ease all;
 }
+.drop button{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    border-style: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+.drop-open button,.drop-close button{
+    visibility: hidden;
+    opacity: 0;
+}
 
 /* banner */
 
 .banner{
     height: 80vh;
     position: relative;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
 }
 .ban-img img{
     width: 100%;
@@ -110,34 +122,14 @@
     top: 0;
     z-index: -1;
 }
-.ban-content{
-}
 .ban-content-in{
     width: 70vb;
     margin: 0 40px 0 40px;
 }
-/* .nav-links-active{
-    padding: 30px 0 30px 15px;
-    visibility: visible;
-    opacity: 1;
-    height: auto;
-} */
-.drop button{
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    border-style: none;
-    background-color: transparent;
-    font-size: 20px;
-  }
-.drop-open button{
-    visibility: hidden;
-    opacity: 0;
-}
-.drop-close button{
-    visibility: hidden;
-    opacity: 0;
-}
+
+
+/* media Queries */
+
 @media only screen and (max-width: 1200px) {
   .nav-link-in ul{
     flex-direction: column;
@@ -159,20 +151,29 @@
     visibility: visible;
     opacity: 1;
   }
-  .drop-close button{
+  .drop-open button.close{
     visibility: hidden;
     opacity: 0;
+  }
+  .drop-close button.open{
+    visibility: visible;
+    opacity: 1;
   }
   .nav-links{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    /* padding: 30px 0 30px 15px; */
     visibility: hidden;
     opacity: 0;
     padding: 0;
     height: 0;
   }
-  
+   .nav-links.active{
+    visibility: visible;
+    opacity: 1;
+    padding: 30px 0 30px 15px;
+    height: auto;
+    transition: 0.5s ease all;
+  } 
 }
