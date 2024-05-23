@@ -110,11 +110,7 @@ h2{
     border-radius: 32.5px;
 }
 .nav-link-btn button:hover{
-    background-color: white;
-    border-style: solid;
-    border-color: #FFEE00;
-    color: #FFEE00;
-    font-weight: 900;
+   filter: brightness(90%);
     transition: 0.2s ease all;
 }
 .drop button{
@@ -205,11 +201,7 @@ h2{
     border-color: #FFEE00;
 }
 .ban-btn-in .btn-in button:hover{
-    background-color: white;
-    border-style: solid;
-    border-color: #FFEE00;
-    color: #FFEE00;
-    font-weight: 900;
+    filter: brightness(90%);
     transition: 0.2s ease all;
 }
 
@@ -290,7 +282,7 @@ h2{
         width: 43%;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     .ban-img img{
         position: relative;
         object-position: 100% 60%;
@@ -298,7 +290,7 @@ h2{
     }
     .ban-img{
         width: 100%;
-        height: 500px;
+        height: 700px;
     }
     .banner{
         height: auto;
@@ -313,5 +305,26 @@ h2{
     }
     .ban-btn{
         width: 330px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .ban-img{
+        height: 580px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .ban-img{
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .ban-img{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 416px){
+    .ban-img{
+        height: 350px;
     }
 }
