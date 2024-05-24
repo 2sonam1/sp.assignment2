@@ -700,6 +700,9 @@ footer{
     /* .abt-btm-left li {
         height: 20vh;
     } */
+    .organization-content img{
+        height: 15vh;
+    }
 }
 @media only screen and (max-width: 416px){
     .ban-img{
