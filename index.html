@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FGI</title>
 
+    <!-- aon animation css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- splide css  -->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -28,21 +31,66 @@
             <div class="nav">
                 <div class="container">
                     <div class="nav-in">
-                        <div class="nav-logo">
+                        <div class="nav-logo" data-aos="zoom-in">
                             <a href="index.html"><img src="img/Logo RGB-01 2.svg" alt=""></a>
                         </div>
                         <div class="nav-links">
                             <div class="nav-link-in">
-                                <ul>
-                                    <li><a href="#">Find a therapist</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">How we help</a></li>
-                                    <li><a href="#">For therapists</a></li>
-                                    <li><a href="#">Expertise & tools</a></li>
-                                    <li><a href="#"><span><i class="fa-solid fa-phone"></i></span>650-209-8818</a></li>
+                                <ul class="dropdwn">
+                                    <li data-aos="zoom-in">
+                                        <a href="#!">Find a therapist</a>
+                                        <ul class="dropdwn1">
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    <li data-aos="zoom-in">
+                                        <a href="#!">About</a>
+                                        <ul class="dropdwn1">
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                        </ul>
+                                    
+                                    </li>
+                                    <li data-aos="zoom-in">
+                                        <a href="#">How we help</a>
+                                        <ul class="dropdwn1">
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li data-aos="zoom-in">
+                                        <a href="#">For therapists</a>
+                                        <ul class="dropdwn1">
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li data-aos="zoom-in">
+                                        <a href="#">Expertise & tools</a>
+                                        <ul class="dropdwn1">
+                                            <li><a href="#!">item1</a></li>
+                                            <li><a href="#!">item2</a></li>
+                                            <li><a href="#!">item3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li data-aos="zoom-in"><a href="#"><span><i class="fa-solid fa-phone"></i></span>650-209-8818</a></li>
                                 </ul>
                             </div>
-                            <div class="nav-link-btn">
+                            <div class="nav-link-btn" data-aos="zoom-in">
                                 <button>Book a free consult</button>
                             </div>
                         </div>
@@ -62,7 +110,7 @@
                 <div class="banner">
                     <div class="ban-content">
                         <div class="container-fluid">
-                            <div class="ban-content-in">
+                            <div class="ban-content-in" data-aos="zoom-in">
                                 <div class="ban-heading">
                                     <h1>Feeling Better</h1>
                                     <h2>Begins with Better Therapy.</h2>
@@ -95,7 +143,7 @@
             </section>
             <!-- section starts -->
             <section>
-                <div class="page-break">
+                <div class="page-break" >
                     <div class="pg-brk-text"><h2>Therapists — looking to increase your effectiveness</h2></div>
                     <div class="pg-brk-btn">
                         <button>See How</button>
@@ -111,7 +159,7 @@
                             <div class="heading">
                                 <h2>Finding the best therapist shouldn't be left to chance</h2>
                             </div>
-                            <div class="quote-content">
+                            <div class="quote-content" data-aos="zoom-in">
                                 <p>When therapy is ineffective and prolonged, it wastes your time and money — and it holds you back</p>
                             </div>
                         </div>
@@ -126,64 +174,75 @@
                         <div class="about-in">
                             <div class="abt-top">
                                 <div class="abt-data">
-                                    <div class="heading">
-                                        <h1>8x</h1>
+                                    <div class="heading" >
+                                        <h1 id="count1">8</h1><h1>x</h1>
                                     </div>
-                                    <div class="abt-data-content">
+                                    <div class="abt-data-content" >
                                         <p>More effective than other treatment approaches*</p>
                                     </div>
                                 </div>
                                 <div class="abt-data">
-                                    <div class="heading">
-                                        <h1>30%</h1>
+                                    <div class="heading" >
+                                        <h1 id="count2">30</h1><h1>%</h1>
                                     </div>
-                                    <div class="abt-data-content">
+                                    <div class="abt-data-content" >
                                         <p>Average amount of suffering reduced per therapy hour*</p>
                                     </div>
                                 </div>
                                 <div class="abt-data">
-                                    <div class="heading">
-                                        <h1>5</h1>
+                                    <div class="heading" >
+                                        <h1 id="count3">5</h1>
                                     </div>
-                                    <div class="abt-data-content">
+                                    <div class="abt-data-content" >
                                         <p>Expect meaningful change within five therapy sessions*</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="abt-bottom">
                                 <div class="abt-btm-left">
-                                    <ul>
+                                    <!-- <ul>
                                         <li>
-                                            <img src="img\Mask Group.png" alt="">
+                                            <img src="img\Mask Group.png" alt="" data-aos="zoom-in">
                                         </li>
                                         <li>
-                                            <img src="img\Mask Group-1.png" alt="">
+                                            <img src="img\Mask Group-1.png" alt="" data-aos="zoom-in">
                                         </li>
                                         <li>
-                                            <img src="img\Mask Group-2.png" alt="">
+                                            <img src="img\Mask Group-2.png" alt="" data-aos="zoom-in">
                                         </li>
                                         <li>
-                                            <img src="img\Mask Group-3.png" alt="">
+                                            <img src="img\Mask Group-3.png" alt="" data-aos="zoom-in">
                                         </li>
                                         <li>
-                                            <img src="img\Mask Group-4.png" alt="">
+                                            <img src="img\Mask Group-4.png" alt="" data-aos="zoom-in">
                                         </li>
                                         
-                                    </ul>
+                                    </ul> -->
+                                    <div class="three-img">
+                                        <div class="three-img-item"><img src="img\Mask Group.png" alt="" data-aos="zoom-in"></div>
+                                        <div class="three-img-item"><img src="img\Mask Group-1.png" alt="" data-aos="zoom-in"></div>
+                                        <div class="three-img-item"><img src="img\Mask Group-2.png" alt="" data-aos="zoom-in"></div>
+                                    </div>
+                                    <div class="two-img">
+                                        <div class="two-img-item"><img src="img\Mask Group-3.png" alt="" data-aos="zoom-in"></div>
+                                        <div class="two-img-item"><img src="img\Mask Group-4.png" alt="" data-aos="zoom-in"></div>
+                                    </div>
                                 </div>
                                 <div class="abt-btm-right">
                                     <div class="heading">
                                         <h2>We've helped thousands of people</h2>
                                     </div>
+                                    <br>
                                     <div class="abt-right-content">
                                         <p>Whether you're looking for help with anxiety, depression, grief, relationship challenges, or other, at the Feeling Good
                                         Institute, you'll work with a therapist who specializes in helping others like you. Our therapists have all had hundreds
-                                        of hours of training in effective therapy and Cognitive Behavioral Therapy (CBT) .</p>
+                                        of hours of training in effective therapy and Cognitive Behavioral Therapy (CBT) .</p><br>
                                         <p>You'll notice Feeling Good
                                         therapists go beyond traditional talk therapy and tap into powerful treatment methods  that
                                         are, compassionate, data-driven, insightful, and proven to be more effective than traditional therapy — so you can feel
                                         better faster.</p>
                                     </div>
+                                    <br>
                                     <div class="abt-right-btn">
                                         <button>Get Matched with a Therapist</button>
                                     </div>
@@ -209,7 +268,7 @@
                             <div class="heading"><h2>How can we help you?</h2></div>
                             <div class="help-content">
                                 <div class="help-content-in">
-                                    <div class="help-content-img">
+                                    <div class="help-content-img" data-aos="zoom-in">
                                         <img src="img/img1.png" alt="">
                                     </div>
                                     <div class="help-content-heading">
@@ -217,7 +276,7 @@
                                     </div>
                                 </div>
                                 <div class="help-content-in">
-                                    <div class="help-content-img">
+                                    <div class="help-content-img" data-aos="zoom-in">
                                         <img src="img/img2.png" alt="">
                                     </div>
                                     <div class="help-content-heading">
@@ -225,7 +284,7 @@
                                     </div>
                                 </div>
                                 <div class="help-content-in">
-                                    <div class="help-content-img">
+                                    <div class="help-content-img" data-aos="zoom-in">
                                         <img src="img/img3.png" alt="">
                                     </div>
                                     <div class="help-content-heading">
@@ -233,7 +292,7 @@
                                     </div>
                                 </div>
                                 <div class="help-content-in">
-                                    <div class="help-content-img">
+                                    <div class="help-content-img" data-aos="zoom-in">
                                         <img src="img/img4.png" alt="">
                                     </div>
                                     <div class="help-content-heading">
@@ -254,10 +313,10 @@
                 <div class="quote">
                     <div class="container">
                         <div class="quote-in">
-                            <div class="heading">
+                            <div class="heading" >
                                 <h2>You Deserve Effective Therapy</h2>
                             </div>
-                            <div class="quote-content">
+                            <div class="quote-content" data-aos="zoom-in">
                                 <p>A highly trained, skilled and vetted therapist makes all the difference</p>
                             </div>
                         </div>
@@ -274,13 +333,13 @@
                                 <ul class="splide__list">
                                     <li class="splide__slide">
                                         <div class="heading"><h2>What our clients have to say</h2></div>
-                                        <div class="spilde-content"><p>“My problems with anxiety and depression have persisted for years despite previous therapy and medication treatment.
+                                        <div class="spilde-content" data-aos="zoom-in"><p>“My problems with anxiety and depression have persisted for years despite previous therapy and medication treatment.
                                         Coming to the Feeling Good Institute may be one of the most important things I've done in my life for my happiness and
                                         well being.”</p></div>
                                     </li>
                                     <li class="splide__slide">
-                                        <div class="heading"><h2>What our clients have to say</h2></div>
-                                        <div class="spilde-content">
+                                        <div class="heading" data-aos="zoom-in"><h2>What our clients have to say</h2></div>
+                                        <div class="spilde-content" data-aos="zoom-in">
                                             <p>“My problems with anxiety and depression have persisted for years despite previous therapy and medication
                                                 treatment.
                                                 Coming to the Feeling Good Institute may be one of the most important things I've done in my life for my
@@ -289,8 +348,8 @@
                                         </div>
                                     </li>
                                     <li class="splide__slide">
-                                        <div class="heading"><h2>What our clients have to say</h2></div>
-                                        <div class="spilde-content">
+                                        <div class="heading" data-aos="zoom-in"><h2>What our clients have to say</h2></div>
+                                        <div class="spilde-content" data-aos="zoom-in">
                                             <p>“My problems with anxiety and depression have persisted for years despite previous therapy and medication
                                                 treatment.
                                                 Coming to the Feeling Good Institute may be one of the most important things I've done in my life for my
@@ -305,7 +364,6 @@
                 </div>
             <!-- section ends  -->
             </section>
-            <div class="spacer"></div>
             <!-- section starts  -->
             <section>
                 <div class="process">
@@ -316,7 +374,7 @@
                                 <ul>
                                     <li>
                                         <div class="process-step">
-                                            <div class="step-content">
+                                            <div class="step-content" data-aos="zoom-in">
                                                 <img src="img/step1.png" alt="">
                                             </div>
                                             
@@ -324,7 +382,7 @@
                                         <div class="step-text">
                                             <div class="step-text-in">
                                                 <div class="step-index">
-                                                    <p>1</p>
+                                                    1
                                                 </div>
                                                 <div class="step-heading"><h4>Get Matched</h4></div>
                                                 <div class="text-in"><p>Tell us about your needs and preferences and choose your therapist.</p></div>
@@ -333,14 +391,14 @@
                                     </li>
                                     <li>
                                         <div class="process-step">
-                                            <div class="step-content">
+                                            <div class="step-content" data-aos="zoom-in">
                                                 <img src="img/step2.png" alt="">
                                             </div>
                                         </div>
                                         <div class="step-text">
                                             <div class="step-text-in">
                                                 <div class="step-index">
-                                                    <p>1</p>
+                                                    2
                                                 </div>
                                                 <div class="step-heading">
                                                     <h4>Get Matched</h4>
@@ -353,14 +411,14 @@
                                     </li>
                                     <li>
                                         <div class="process-step">
-                                            <div class="step-content">
+                                            <div class="step-content" data-aos="zoom-in">
                                                 <img src="img/step3.png" alt="">
                                             </div>
                                         </div>
                                         <div class="step-text">
                                             <div class="step-text-in">
                                                 <div class="step-index">
-                                                    <p>1</p>
+                                                    3
                                                 </div>
                                                 <div class="step-heading">
                                                     <h4>Get Matched</h4>
@@ -375,6 +433,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="abt-heart">
+                        <img src="img\Group 1.png" alt="">
+                    </div>
+                </div>
+                <div class="abt-img">
+                    <img src="img\Frame 12701.png" alt="">
                 </div>
             <!-- section ends  -->
             </section>
@@ -386,27 +450,28 @@
                         <div class="organization-in">
                             <div class="heading"><h2>Accredited by top organizations to provide advanced psychotherapy training</h2></div>
                             <div class="organization-content">
-                                <div class="item"><img src="img/logo1.png" alt=""></div>
-                                <div class="item"><img src="img/logo2.png" alt=""></div>
-                                <div class="item"><img src="img/logo3.png" alt=""></div>
-                                <div class="item"><img src="img/logo4.png" alt=""></div>
+                                <div class="item" data-aos="zoom-in"><img src="img/logo1.png" alt=""></div>
+                                <div class="item" data-aos="zoom-in"><img src="img/logo2.png" alt=""></div>
+                                <div class="item" data-aos="zoom-in"><img src="img/logo3.png" alt=""></div>
+                                <div class="item" data-aos="zoom-in"><img src="img/logo4.png" alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
             <!-- section ends  -->
             </section>
+            <div class="spacer"></div>
             <!-- section starts  -->
             <section>
                 <div class="news">
                     <div class="container">
                         <div class="news-in">
-                            <div class="heading">
+                            <div class="heading" >
                                 <h2>Latest News</h2>
                             </div>
                             <div class="news-blogs">
                                 <a href="#">
-                                    <div class="new-blogs-in">
+                                    <div class="new-blogs-in" >
                                         <div class="blog-img">
                                             <img src="img/blog1.png" alt="" class="">
                                         </div>
@@ -418,7 +483,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <div class="new-blogs-in">
+                                    <div class="new-blogs-in" >
                                         <div class="blog-img">
                                             <img src="img/blog2.png" alt="" class="">
                                         </div>
@@ -430,7 +495,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <div class="new-blogs-in">
+                                    <div class="new-blogs-in" >
                                         <div class="blog-img">
                                             <img src="img/blog3.png" alt="" class="">
                                         </div>
@@ -444,9 +509,12 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             <!-- section ends  -->
             </section>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
         </div>
 
         
@@ -456,23 +524,43 @@
             <div class="foot">
                 <div class="container">
                     <div class="foot-in">
+                        <div class="box">
+                            <div class="box-left">
+                                <div class="box-heading">
+                                    <h4>FEELING GOOD TIPS IN YOUR INBOX</h4>
+                                </div>
+                                <div class="box-content">
+                                    <p>High-quality content. Zero spam.</p>
+                                </div>
+                            </div>
+                            <div class="box-right">
+                                <div class="ban-btn-in">
+                                    <div class="text-box">
+                                        <input type="text" placeholder="Your Email">
+                                    </div>
+                                    <div class="btn-in">
+                                        <button>Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="foot-top">
-                            <div class="foot-top-logo"><img src="img/Logo RGB-01 2.svg" alt=""></div>
+                            <div class="foot-top-logo"><img src="img/Group1.svg" alt=""></div>
                             <div class="foot-top-list">
                                 <div class="foot-item">
                                     <h4>Find a therapist</h4>
                                     <ul>
                                         <li>
-                                            <p>Get Matched</p>
+                                            <a href="#"><p>Get Matched</p></a>
                                         </li>
                                         <li>
-                                            <p>Therapists by states</p>
+                                            <a href="#"><p>Therapists by states</p></a>
                                         </li>
                                         <li>
-                                            <p>Therapists by states</p>
+                                            <a href="#"><p>Therapists by states</p></a>
                                         </li>
                                         <li>
-                                            <p>Browse locations</p>
+                                            <a href="#"><p>Browse locations</p></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -480,13 +568,13 @@
                                     <h4>Services</h4>
                                     <ul>
                                         <li>
-                                            <p>Online therapy</p>
+                                            <a href="#"><p>Online therapy</p></a>
                                         </li>
                                         <li>
-                                            <p>in person therapy</p>
+                                            <a href="#"><p>in person therapy</p></a>
                                         </li>
                                         <li>
-                                            <p>intensive therapy</p>
+                                            <a href="#"><p>intensive therapy</p></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -494,13 +582,13 @@
                                     <h4>Support</h4>
                                     <ul>
                                         <li>
-                                            <p>privacy policy</p>
+                                            <a href="#"><p>privacy policy</p></a>
                                         </li>
                                         <li>
-                                            <p>FAQs</p>
+                                            <a href="#"><p>FAQs</p></a>
                                         </li>
                                         <li>
-                                            <p>Contact us</p>
+                                            <a href="#"><p>Contact us</p></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -508,20 +596,27 @@
                                     <h4>Login</h4>
                                     <ul>
                                         <li>
-                                            <p>Therapist login</p>
+                                            <a href="#"><p>Therapist login</p></a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="foot-bottom">
-                            <div class="btm-top"><h5>The above claims are made based on two separate naturalistic studies of the effectiveness of TEAM-CBT. Study 1 was
+                            <div class="btm-top"><p>The above claims are made based on two separate naturalistic studies of the effectiveness of TEAM-CBT. Study 1 was
                             conducted in 2015, across 59 patients. Study #2 was conducted from 2018-2020, across 337 patients. Changes in symptoms
                             were measured using the Brief Mood Survey before and after every session. Data analyses and results available upon
-                            request</h5></div>
+                            request</p></div>
                             <div class="btm-bottom">
-                                <div class="left">©2020 by Feeling Good Now. All Rights Reserved.</div>
-                                <div class="right">Follow Us On:</div>
+                                <div class="left"><p>©2020 by Feeling Good Now. All Rights Reserved.</p></div>
+                                <div class="right">
+                                    <p>Follow Us On:</p>
+                                    <img src="img/insta.svg" alt="">
+                                    <img src="img/fb.svg" alt="">
+                                    <img src="img/linkdin.svg" alt="">
+                                    <img src="img/twitt.svg" alt="">
+                                    <img src="img/yt.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -532,6 +627,12 @@
 
     <!-- wrapper ends -->
     </wrapper>
+
+    <!-- aon animation js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- splide js  -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
